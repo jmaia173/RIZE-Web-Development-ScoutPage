@@ -1,0 +1,153 @@
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background-color: #f5f6fa;
+}
+
+/* ===== Header & Nav ===== */
+header {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #4ecca3;
+}
+
+/* ===== Main Sections ===== */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #4ecca3;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+#about img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    display: block;
+    margin: 1rem 0;
+}
+
+#how-it-works article {
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+    border-left: 4px solid #4ecca3;
+}
+
+/* ===== Form ===== */
+#scout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+#scout-form label {
+    font-weight: 600;
+    margin-bottom: -0.5rem;
+}
+
+#scout-form input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#scout-form button {
+    background-color: #4ecca3;
+    color: #1a1a2e;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#scout-form button:hover {
+    background-color: #3fae8a;
+}
+
+#result {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+footer a {
+    color: #4ecca3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
