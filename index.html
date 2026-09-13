@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoutMatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ScoutMatch</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#try-it">Try It</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About ScoutMatch</h2>
+            <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600" alt="Soccer players competing on a field during a match">
+            <p>ScoutMatch helps clubs and scouts match players to team needs based on playing style, position, and skill tags — turning scouting into a fast, data-driven process instead of guesswork.</p>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <article>
+                <h3>1. Enter Player Attributes</h3>
+                <p>Input a player's position, key skills, and playing style as tags.</p>
+            </article>
+            <article>
+                <h3>2. Set Team Needs</h3>
+                <p>Define what your team is looking for — pace, finishing, defensive work rate, and more.</p>
+            </article>
+            <article>
+                <h3>3. Get a Match Score</h3>
+                <p>ScoutMatch compares the tags and instantly calculates how well the player fits.</p>
+            </article>
+        </section>
+
+        <section id="try-it">
+            <h2>Try It Out</h2>
+            <form id="scout-form">
+                <label for="player-name">Player Name</label>
+                <input type="text" id="player-name" name="player-name" placeholder="e.g. Marco Silva" required>
+
+                <label for="player-tags">Player Tags (comma-separated)</label>
+                <input type="text" id="player-tags" name="player-tags" placeholder="e.g. fast, finisher, dribbler" required>
+
+                <label for="team-needs">Team Needs (comma-separated)</label>
+                <input type="text" id="team-needs" name="team-needs" placeholder="e.g. fast, defender, strong" required>
+
+                <button type="submit">Calculate Match</button>
+            </form>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Built by Joao Maia &mdash; <a href="https://github.com/jmaia173">GitHub</a></p>
+        <p>ScoutMatch beta v0.1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
